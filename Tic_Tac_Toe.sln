@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP_IP", "TCP_IP\TCP_IP.csproj", "{186D331C-2EF5-4007-BBE3-F70AA89AA40A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tic_Tac_Toe", "TCP_IP\Tic_Tac_Toe.csproj", "{186D331C-2EF5-4007-BBE3-F70AA89AA40A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

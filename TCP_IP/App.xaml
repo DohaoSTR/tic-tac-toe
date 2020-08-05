@@ -1,7 +1,7 @@
-﻿<Application x:Class="TCP_IP.App"
+﻿<Application x:Class="Tic_Tac_Toe.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:TCP_IP"
+             xmlns:local="clr-namespace:Tic_Tac_Toe"
              StartupUri="View/MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>

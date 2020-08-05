@@ -1,23 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using TCP_IP.Model;
+using Tic_Tac_Toe.Model;
 
-namespace TCP_IP.View
+namespace Tic_Tac_Toe.View
 {
     /// <summary>
     /// Логика взаимодействия для IpPortControl.xaml
@@ -41,7 +28,7 @@ namespace TCP_IP.View
         private void buttonConnectOrCreate_Click(object sender, RoutedEventArgs e)
         {
             buttonConnectOrCreate.IsEnabled = false;
-            if(_statePlayer == StatePlayer.Client)
+            if (_statePlayer == StatePlayer.Client)
             {
                 _client = new Client();
                 _client.ConnectionFail += Client_ConnectionFail;
@@ -70,7 +57,7 @@ namespace TCP_IP.View
 
         private void Client_ConnectionFail(Client c, string msg)
         {
-            Dispatcher.Invoke(new Action(() => 
+            Dispatcher.Invoke(new Action(() =>
             {
                 buttonConnectOrCreate.IsEnabled = true;
                 MessageBox.Show("Ошибка подключения!");

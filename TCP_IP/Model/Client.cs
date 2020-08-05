@@ -2,22 +2,20 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Windows;
-using System.Windows.Threading;
 
-namespace TCP_IP.Model
+namespace Tic_Tac_Toe.Model
 {
     public class Client
     {
         private Socket ServerSocket = null;
-        public delegate void OnConnectedHandler(Client c, Socket s);
-        public delegate void OnSentHandler(Client c, int bytesCount);
-        public delegate void OnDataReceivedHandler(Client c, string str);
-        public delegate void OnConnectionFailHandler(Client c, string msg);
-        public event OnConnectedHandler Connected;
-        public event OnConnectionFailHandler ConnectionFail;
-        public event OnSentHandler Sent;
-        public event OnDataReceivedHandler DataReceived;
+
+        public event Action<Client, Socket> Connected;
+
+        public event Action<Client, string> ConnectionFail;
+
+        public event Action<Client, int> Sent;
+
+        public event Action<Client, string> DataReceived;
 
         public void Connect(string ip, int port)
         {

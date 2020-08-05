@@ -1,23 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using TCP_IP.Model;
-using TCP_IP.View;
+﻿using System.Windows;
 
-namespace TCP_IP
+namespace Tic_Tac_Toe
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml

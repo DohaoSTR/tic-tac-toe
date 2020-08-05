@@ -1,12 +1,11 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Windows;
 
-namespace TCP_IP.Model
+namespace Tic_Tac_Toe.Model
 {
     class ClientSocket
     {

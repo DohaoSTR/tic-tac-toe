@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 
-namespace TCP_IP
+namespace Tic_Tac_Toe
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml
